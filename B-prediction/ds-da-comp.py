@@ -114,9 +114,12 @@ def convert_cgs_to_dimensionless(tensor_cgs):
 
 #main exe
 if __name__ == "__main__":
-    print("Current directory:", os.getcwd())
+    #print("Current directory:", os.getcwd())
     pdb_file = "1igt.pdb"  #hereeeeeeeeeeeeeeliestheimportttttttttttttttt
-    
+    #pdb_file = "1hho.pdb"  #x, cause:prosthetic group
+    #pdb_file = "1dpx.pdb"  #9% off
+    #pdb_file = "3v03.pdb"  #8.9% off 
+
     # Compute tensor
     total_tensor = compute_total_tensor(pdb_file)
     eigvals, delta_chi = compute_anisotropy(total_tensor)
